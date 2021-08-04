@@ -18,6 +18,10 @@
         <spring-cloud.version>2021.0.0-M1</spring-cloud.version>
     </properties>
     <dependencies>
+<!--        <dependency>-->
+<!--            <groupId>com.alibaba.cloud</groupId>-->
+<!--            <artifactId>spring-cloud-starter-alibaba-nacos-config</artifactId>-->
+<!--        </dependency>-->
         <!--公共依赖-->
         <dependency>
             <groupId>com.atguigu.gulimall</groupId>
