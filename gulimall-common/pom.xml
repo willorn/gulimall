@@ -15,7 +15,6 @@
             <version>3.0.1</version>
         </dependency>
 
-
         <!--nacos配置中心-->
         <dependency>
             <groupId>com.alibaba.cloud</groupId>
