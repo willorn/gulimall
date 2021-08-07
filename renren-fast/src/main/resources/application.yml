@@ -37,14 +37,15 @@ spring:
         min-idle: 5       # 连接池中的最小空闲连接
   mvc:
     throw-exception-if-no-handler-found: true
-  #  resources:
-  #    add-mappings: false
   application:
     name: renren-fast  # 意思是把renren-fast项目也注册到nacos中(后面不再强调了)，这样网关才能转发给
   cloud:
     nacos:
       discovery:
         server-addr: localhost:8848 # nacos
+#  resources:
+#    add-mappings: false
+
 
 #mybatis
 mybatis-plus:
@@ -67,15 +68,15 @@ mybatis-plus:
     jdbc-type-for-null: 'null'
 
 
-#renren:
-#  redis:
-#    open: false
-#  shiro:
-#    redis: false
-#  # APP模块，是通过jwt认证的，如果要使用APP模块，则需要修改【加密秘钥】
-#  jwt:
-#    # 加密秘钥
-#    secret: f4e2e52034348f86b67cde581c0f9eb5[www.renren.io]
-#    # token有效时长，7天，单位秒
-#    expire: 604800
-#    header: token
+renren:
+  redis:
+    open: false
+  shiro:
+    redis: false
+  # APP模块，是通过jwt认证的，如果要使用APP模块，则需要修改【加密秘钥】
+  jwt:
+    # 加密秘钥
+    secret: f4e2e52034348f86b67cde581c0f9eb5[www.renren.io]
+    # token有效时长，7天，单位秒
+    expire: 604800
+    header: token
